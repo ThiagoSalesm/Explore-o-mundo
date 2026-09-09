@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países | Latinidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LATINIDADE</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="paises.html" class="active">Países</a></li>
+            <li><a href="turismo.html">Turismo</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="cultura.html">Cultura</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <button class="menu-btn" onclick="abrirMenu()">☰</button>
+    </nav>
+</header>
+<main>
+    <section class="page-header">
+        <span>AMÉRICA DO SUL</span>
+        <h1>Conheça nossos países</h1>
+        <p>
+            Descubra um pouco sobre cada país do continente sul-americano.
+        </p>
+    </section>
+    <section class="content-section">
+        <div class="country-grid">
+            <div class="country-card">
+                <div class="flag">🇧🇷</div>
+                <h2>Brasil</h2>
+                <p>
+                    Maior país da América do Sul, conhecido por suas
+                    praias, florestas, música e diversidade cultural.
+                </p>
+                <button onclick="mostrarPais('Brasil')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇦🇷</div>
+                <h2>Argentina</h2>
+                <p>
+                    Famosa pelo tango, pela gastronomia e pelas
+                    belas paisagens da Patagônia.
+                </p>
+                <button onclick="mostrarPais('Argentina')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇨🇱</div>
+                <h2>Chile</h2>
+                <p>
+                    País de paisagens impressionantes, incluindo
+                    o Deserto do Atacama e a Patagônia.
+                </p>
+                <button onclick="mostrarPais('Chile')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇵🇪</div>
+                <h2>Peru</h2>
+                <p>
+                    Terra da antiga civilização Inca e de destinos
+                    históricos como Machu Picchu.
+                </p>
+                <button onclick="mostrarPais('Peru')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇨🇴</div>
+                <h2>Colômbia</h2>
+                <p>
+                    Conhecida por suas cidades históricas, cafés,
+                    música e belas praias caribenhas.
+                </p>
+                <button onclick="mostrarPais('Colômbia')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇺🇾</div>
+                <h2>Uruguai</h2>
+                <p>
+                    Destino conhecido por suas praias, gastronomia
+                    e cidades charmosas.
+                </p>
+                <button onclick="mostrarPais('Uruguai')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇧🇴</div>
+                <h2>Bolívia</h2>
+                <p>
+                    Possui paisagens únicas, como o Salar de Uyuni,
+                    além de forte cultura indígena.
+                </p>
+                <button onclick="mostrarPais('Bolívia')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇪🇨</div>
+                <h2>Equador</h2>
+                <p>
+                    Lar das Ilhas Galápagos e de uma grande
+                    diversidade natural.
+                </p>
+                <button onclick="mostrarPais('Equador')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇵🇾</div>
+                <h2>Paraguai</h2>
+                <p>
+                    País marcado por sua cultura guarani,
+                    natureza e comércio.
+                </p>
+                <button onclick="mostrarPais('Paraguai')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇻🇪</div>
+                <h2>Venezuela</h2>
+                <p>
+                    Possui paisagens naturais impressionantes,
+                    como o Salto Ángel.
+                </p>
+                <button onclick="mostrarPais('Venezuela')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇬🇾</div>
+                <h2>Guiana</h2>
+                <p>
+                    País com grande diversidade cultural e
+                    extensas áreas de floresta tropical.
+                </p>
+                <button onclick="mostrarPais('Guiana')">Saiba mais</button>
+            </div>
+            <div class="country-card">
+                <div class="flag">🇸🇷</div>
+                <h2>Suriname</h2>
+                <p>
+                    Destaca-se pela diversidade étnica, cultural
+                    e pelas florestas tropicais.
+                </p>
+                <button onclick="mostrarPais('Suriname')">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <h2>LATINIDADE</h2>
+        <p>Descobrindo a América do Sul.</p>
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="paises.html">Países</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="gastronomia.html">Gastronomia</a>
+            <a href="cultura.html">Cultura</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </div>
+    <p class="copyright">© 2026 Latinidade - Projeto Front-End</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
