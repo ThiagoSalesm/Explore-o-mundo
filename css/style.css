@@ -889,3 +889,144 @@ footer p {
     }
 
 }
+
+/* ========================================
+   MODAL CULTURA
+======================================== */
+
+.culture-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Imagem grande do topo do modal */
+
+.culture-modal-hero {
+    height: 240px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    border-radius: 8px 8px 0 0;
+
+    overflow: hidden;
+}
+
+
+/* camada escura sobre a foto */
+
+.culture-modal-hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(30, 25, 20, 0.9),
+        rgba(30, 25, 20, 0.15)
+    );
+}
+
+
+/* textos que ficam sobre a foto */
+
+.culture-modal-hero-content {
+    position: absolute;
+
+    left: 30px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+
+.culture-modal-hero-content .flag {
+    font-size: 36px;
+}
+
+
+.culture-modal-hero-content h2 {
+    margin: 5px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+}
+
+
+.culture-modal-hero-content p {
+    margin: 0;
+
+    opacity: 0.9;
+
+    font-size: 14px;
+}
+
+
+/* botão X */
+
+.culture-modal-close {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    z-index: 3;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 50%;
+
+    padding: 9px;
+}
+
+
+/* informações */
+
+.culture-info {
+    border-left: 3px solid #b5462e;
+
+    padding-left: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.culture-info strong {
+    display: block;
+
+    color: #b5462e;
+
+    margin-bottom: 5px;
+}
+
+
+/* celular */
+
+@media (max-width: 576px) {
+
+    .culture-modal-hero {
+        height: 200px;
+    }
+
+    .culture-modal-hero-content {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .culture-modal-hero-content h2 {
+        font-size: 27px;
+    }
+
+}
