@@ -129,15 +129,11 @@ header {
 
     background:
 
-        linear-gradient(
-
-            90deg,
+        linear-gradient(90deg,
 
             rgba(25, 20, 15, .85),
 
-            rgba(25, 20, 15, .25)
-
-        ),
+            rgba(25, 20, 15, .25)),
 
         url("https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1800&q=80");
 
@@ -488,90 +484,66 @@ header {
 
 .tourism-image.brasil {
 
-    background: linear-gradient(
+    background: linear-gradient(135deg,
 
-        135deg,
+            #69a86b,
 
-        #69a86b,
-
-        #e7c84c
-
-    );
+            #e7c84c);
 
 }
 
 
 .tourism-image.peru {
 
-    background: linear-gradient(
+    background: linear-gradient(135deg,
 
-        135deg,
+            #8f6d50,
 
-        #8f6d50,
-
-        #d8b687
-
-    );
+            #d8b687);
 
 }
 
 
 .tourism-image.chile {
 
-    background: linear-gradient(
+    background: linear-gradient(135deg,
 
-        135deg,
+            #d5a65e,
 
-        #d5a65e,
-
-        #e8d8a9
-
-    );
+            #e8d8a9);
 
 }
 
 
 .tourism-image.argentina {
 
-    background: linear-gradient(
+    background: linear-gradient(135deg,
 
-        135deg,
+            #77a6c9,
 
-        #77a6c9,
-
-        #d8e6ec
-
-    );
+            #d8e6ec);
 
 }
 
 
 .tourism-image.colombia {
 
-    background: linear-gradient(
+    background: linear-gradient(135deg,
 
-        135deg,
+            #d9a84b,
 
-        #d9a84b,
-
-        #6f9c6a
-
-    );
+            #6f9c6a);
 
 }
 
 
 .tourism-image.bolivia {
 
-    background: linear-gradient(
+    background: linear-gradient(135deg,
 
-        135deg,
+            #ddd5b8,
 
-        #ddd5b8,
-
-        #9e9b86
-
-    );
+            #9e9b86);
 
 }
 
@@ -655,13 +627,9 @@ header {
 
     background:
 
-        linear-gradient(
+        linear-gradient(rgba(30, 25, 20, .82),
 
-            rgba(30, 25, 20, .82),
-
-            rgba(30, 25, 20, .82)
-
-        ),
+            rgba(30, 25, 20, .82)),
 
         url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1600&q=80");
 
@@ -886,6 +854,145 @@ footer p {
 
         font-size: 40px;
 
+    }
+
+}
+
+/* ========================================
+   MODAL CULTURA
+======================================== */
+
+.culture-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Imagem grande do topo do modal */
+
+.culture-modal-hero {
+    height: 240px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    border-radius: 8px 8px 0 0;
+
+    overflow: hidden;
+}
+
+
+/* camada escura sobre a foto */
+
+.culture-modal-hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(to top,
+            rgba(30, 25, 20, 0.9),
+            rgba(30, 25, 20, 0.15));
+}
+
+
+/* textos que ficam sobre a foto */
+
+.culture-modal-hero-content {
+    position: absolute;
+
+    left: 30px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+
+.culture-modal-hero-content .flag {
+    font-size: 36px;
+}
+
+
+.culture-modal-hero-content h2 {
+    margin: 5px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+}
+
+
+.culture-modal-hero-content p {
+    margin: 0;
+
+    opacity: 0.9;
+
+    font-size: 14px;
+}
+
+
+/* botão X */
+
+.culture-modal-close {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    z-index: 3;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 50%;
+
+    padding: 9px;
+}
+
+
+/* informações */
+
+.culture-info {
+    border-left: 3px solid #b5462e;
+
+    padding-left: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.culture-info strong {
+    display: block;
+
+    color: #b5462e;
+
+    margin-bottom: 5px;
+}
+
+
+/* celular */
+
+@media (max-width: 576px) {
+
+    .culture-modal-hero {
+        height: 200px;
+    }
+
+    .culture-modal-hero-content {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .culture-modal-hero-content h2 {
+        font-size: 27px;
     }
 
 }
