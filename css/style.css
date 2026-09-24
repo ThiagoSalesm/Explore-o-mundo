@@ -536,7 +536,6 @@ header {
 
 }
 
-
 .tourism-image.bolivia {
 
     background: linear-gradient(135deg,
@@ -547,6 +546,41 @@ header {
 
 }
 
+.tourism-image.equador {
+    background: linear-gradient(135deg,
+            #d9b84c,
+            #6f9c6a);
+}
+
+.tourism-image.guiana {
+    background: linear-gradient(135deg,
+            #6f9c6a,
+            #d8b84c);
+}
+
+.tourism-image.paraguai {
+    background: linear-gradient(135deg,
+            #d8a6a6,
+            #e8d8d8);
+}
+
+.tourism-image.suriname {
+    background: linear-gradient(135deg,
+            #6f9c6a,
+            #d8c45c);
+}
+
+.tourism-image.uruguai {
+    background: linear-gradient(135deg,
+            #8bb5d1,
+            #e8e8df);
+}
+
+.tourism-image.venezuela {
+    background: linear-gradient(135deg,
+            #d9b84c,
+            #8c9fbd);
+}
 
 .tourism-content span {
 
